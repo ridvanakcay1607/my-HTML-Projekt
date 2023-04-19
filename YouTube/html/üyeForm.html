@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>kullanıcı hesabı</title>
+</head>
+
+<body>
+
+
+    <form action="">
+
+        <table>
+            <fieldset>
+                <legend>YouTube' a kaydol</legend>
+                <tr>
+                    <td><label for="ad">İsim Soyisim</label></td>
+                    <td><input type="text" id="ad" name="ad"></td>
+                </tr>
+
+              
+
+                <tr>
+                    <td><label for="tel">Telefon Numarası</label></td>
+                    <td><input type="text" id="tel" name="tel" placeholder="0151-xxx-xxx-xx" required min="5" max="15">
+                    </td>
+                </tr>
+
+                <tr>
+                    <td><label for="email">E-Mail adresi giriniz</label></td>
+                    <td><input type="email" id="email" placeholder="....." name="email" value=".....@gmail.com"></td>
+                </tr>
+
+                <tr>
+                    <td><label for="password">Password giriniz</label></td>
+                    <td><input type="password" id="password" placeholder="********" name="password"></td>
+                </tr>
+                <tr>
+                    <td><label for="password">Password tekrar giriniz</label></td>
+                    <td><input type="password" id="password" placeholder="********" name="password"></td>
+                </tr>
+                <tr>
+                    <td><label for="date">Doğum tarihi giriniz</label></td>
+                    <td><input type="date" id="date" name="date"></td>
+                </tr>
+              
+            </fieldset>
+        </table>
+
+
+        <div>
+            <input type="radio" id="e" name="cinsiyet" value="Erkek" checked>
+            <label for="e">Erkek</label>
+            <input type="radio" id="k" name="cinsiyet" value="Kadın">
+            <label for="k">Kadın</label>
+            <input type="radio" id="b" name="cinsiyet" value="Belirtmek istemiyorum">
+            <label for="b">Belirtmek istemiyorum</label>
+        </div>
+
+
+        <div>
+            <h5>Favori alanlarınızı seçiniz</h5>
+            <input type="checkbox" id="s" name="alan1" value="SporBilim">
+            <label for="s">Spor</label>
+            <input type="checkbox" id="b" name="alan2" value="Bilim">
+            <labbel for="b">Bilim</labbel>
+            <input type="checkbox" id="k" name="alan3" value="Kültür">
+            <label for="k">Kültür</label>
+            <input type="checkbox" id="e" name="alan3" value="Kültür">
+            <label for="e">Eğlence</label>
+        </div>
+
+
+
+
+        <h5>Sıkça sorulan sorular</h5>
+        <details>
+            <summary>Üyeliğimi iptal edebilir miyim?</summary>
+            <p>Ayrılman bizi üzse de evet. İstediğin zaman üyeliğini iptal edebilirsin</p>
+        </details>
+
+        <details>
+            <summary>Hangi ödeme yöntemlerini kullanabilirim?</summary>
+            <p>Paypal - Kredi Kartı - Klarna - SEPA</p>
+        </details>
+
+
+        <div>
+            <label for="renk">Avatar rengini seç</label>
+            <input type="color" id="renk" name="renk">
+        </div>
+        <br>
+
+
+
+        <h5>Bize yaz</h5>
+        <div>
+            <textarea name="mesaj" id="mesaj" placeholder="mesajınızı buraya yazınız" cols="30" rows="10"
+                maxlength="1"></textarea>
+        </div>
+        
+
+    
+       
+        <div>
+            <label for="dosya">Göndermek istediğin dosyayı seç</label>
+            <input type="file" id="dosya" name="dosya" multiple="">
+        </div>
+        <br>
+
+
+       
+        <input type="reset" value="Temizle">
+     
+
+        <button disabled>kayıt ol</button> <!--disabled; değeri deaktif yapar -->
+
+
+        <button type="submit" formtarget="_blank">Gönder</button>
+       
+
+    </form>
+
+
+
+</body>
+
+</html>
